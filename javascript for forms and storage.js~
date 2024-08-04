@@ -1,0 +1,20 @@
+document.getElementById('signup-form').addEventListener('submit', (event) => {
+    event.preventDefault(); // Prevent default form submission
+
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const password = document.getElementById('password').value;
+
+    // Store data (choose one method):
+
+    // Method 1: Local Storage (simpler, but less secure)
+    localStorage.setItem('user', JSON.stringify({ name, email, password }));
+
+    // Method 2: Server-Side Storage (more secure)
+    // Send data to your server using AJAX/Fetch and store it in a database
+    // ... (code to send data to your server)
+
+    // Redirect to login page
+    window.location.href = 'login.html';
+});
+

@@ -1,0 +1,67 @@
+document.addEventListener("DOMContentLoaded", function() {
+    const form = document.getElementById("signup-form");
+
+    form.addEventListener("submit", function(event) {
+        event.preventDefault();
+        
+        const name = document.getElementById("name").value;
+        const email = document.getElementById("email").value;
+        const password = document.getElementById("password").value;
+       
+        console.log("Name:", name);
+        console.log("Email:", email);
+        console.log("Password:", password);
+
+       
+        
+        // ... inside the form.addEventListener("submit") function ...
+
+alert("Sign up successful!"); // Existing alert
+
+// Add more feedback
+const successMessage = document.createElement('p');
+successMessage.textContent = "Thank you for joining us! You'll receive a confirmation email shortly.";
+successMessage.classList.add('success-message'); 
+
+// Insert the message after the form
+form.insertAdjacentElement('afterend', successMessage);
+
+setTimeout(() => {
+    successMessage.remove(); // Remove the message after a few seconds
+}, 5000); 
+        form.reset();
+
+    });
+});
+document.addEventListener("DOMContentLoaded", function() {
+    // ... your existing form and animation code ...
+
+    const floatingShapes = [
+        { message: "Be kind online!", className: "shape1" },
+        { message: "Speak up against cyberbullying!", className: "shape2" },
+        { message: "Don't be a bystander, be an upstander!", className: "shape3" },
+        // Add more shapes and messages here...
+    ];
+
+    floatingShapes.forEach(shape => {
+        const div = document.createElement('div');
+        div.className = `floating-shape ${shape.className}`;
+        div.textContent = shape.message;
+        document.body.appendChild(div);
+    });
+});
+const floatingTexts = document.querySelectorAll('.floating-text');
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show');
+    }
+  });
+});
+
+floatingTexts.forEach(text => {
+  observer.observe(text);
+});
+
+
+

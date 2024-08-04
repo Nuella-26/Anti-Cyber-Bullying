@@ -1,0 +1,95 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Stop Cyberbullying</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Stop Cyberbullying: Create a Kinder Online Community Today</h1>
+        <h2>The Emanuella Foundation</h2>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="signup.html">Sign Up</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>Welcome to Our Community</h2>
+            <p>Cyberbullying is the use of electronic communication to bully a person, typically by sending messages of an intimidating or threatening nature. It's a serious issue affecting millions, particularly young people, and can lead to devastating consequences.</p>
+            <a href="signup.html" class="cta-button">Join Us Now</a>
+            <p style="margin-top:1cm;"> Only You can end cyberbullying </p>
+        </section>
+
+        <section class="cyberbullying-info">
+            <h2>Understanding Cyberbullying</h2>
+            
+            <p>Cyberbullying can take many forms, including:</p>
+            <ul>
+                <li>Sending mean texts, emails, or social media posts</li>
+                <li>Spreading rumors or lies online</li>
+                <li>Sharing embarrassing photos or videos</li>
+                <li>Impersonating someone else online</li>
+                <li>Excluding someone from an online group</li>
+            </ul>
+        </section>
+        
+        <section class="history">
+            <h2>A Brief History of Cyberbullying</h2>
+            <p>Although the term "cyberbullying" wasn't coined until the early 2000s, the issue has existed since the advent of the internet. As technology evolved, so did the ways in which bullies could harass and harm their victims.</p>
+            <p>Early forms of cyberbullying included harassment in online chat rooms and forums. With the rise of social media platforms, cyberbullying became more pervasive, reaching wider audiences and leaving a lasting digital footprint.</p>
+            <p>Today, cyberbullying is a global problem with serious consequences for victims, including depression, anxiety, and even suicide. That's why it's more important than ever to raise awareness, educate others, and take action against this harmful behavior.</p>
+        </section>
+
+        <section class="info">
+            <h2>Why It Matters</h2>
+            <p>Understanding the impact of cyberbullying is crucial for creating effective strategies to combat it. Learn about the effects and how you can contribute to the solution.</p>
+
+            <div class="stats">
+                <h3>Did You Know?</h3>
+                <ul>
+                    <li>Cyberbullying affects 1 in 3 young people globally.</li>
+                    <li>Victims of cyberbullying are at higher risk for depression and anxiety.</li>
+                    <li>Bystander intervention can significantly reduce cyberbullying incidents.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="tips">
+            <h2>Tips to Prevent Cyberbullying</h2>
+            <ul>
+                <li>Think before you post: Would you say this to someone's face?</li>
+                <li>Don't share personal information online.</li>
+                <li>Report cyberbullying when you see it.</li>
+                <li>Block bullies and tell a trusted adult.</li>
+            </ul>
+  <section class="video">
+    <h2>Learn More About Cyberbullying</h2>
+    <a href="https://www.youtube.com/watch?v=adV0rxAdJV8" target="_blank">Watch this video to learn more about cyberbullying.</a>
+
+</section>
+
+
+
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 The Emanuella Foundation</p>
+    </footer>
+
+    <div class="contact-bar">
+    <button class="contact-button" onclick="window.location.href='mailto:contact@example.com'">Email Us</button>
+    <button class="contact-button" onclick="window.location.href='tel:+1234567890'">Call Us</button>
+    <button class="contact-button" onclick="window.open('https://www.example.com/contact', '_blank', 'noopener noreferrer')">Contact Form</button>
+</div>
+
+
+    <script src="script.js"></script> 
+</body>
+</html>
+

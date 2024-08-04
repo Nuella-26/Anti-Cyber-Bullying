@@ -1,0 +1,198 @@
+body, h1, h2, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* More modern font choice */
+    line-height: 1.6;
+    color: #eee;
+    background-color: #4b0082;
+    transition: background-color 0.3s ease; /* Smooth transition for background on scroll */
+}
+
+body.scrolled {
+    background-color: #e8e8e8; /* Slightly darker background on scroll */
+}
+
+header {
+    background: #6a0dad;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+    position: fixed; /* Keep header at the top even when scrolling */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure header is above other content */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem; /* Slightly larger font size */
+    transition: transform 0.3s ease; /* Add transition for hover effect */
+}
+
+header h1:hover {
+    transform: scale(1.05); /* Subtle zoom effect on hover */
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.2s ease; /* Smooth transitions for color and scale */
+}
+
+nav a:hover {
+    color: #ffd700; /* Gold color on hover */
+    transform: scale(1.1); /* Slight scale effect on hover */
+}
+
+/* Hero section styles */
+.hero {
+    background: #551a8b;
+    color: #fff;
+    padding: 3rem 2rem;
+    border-radius: 8px; /* Slightly larger radius */
+    text-align: center;
+    margin: 8rem auto 1.5rem; /* Adjust top margin for fixed header */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle box shadow */
+}
+
+.hero img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 2rem;
+    border-radius: 8px; /* Match the section's border radius */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle box shadow for image */
+}
+
+/* ... (rest of your styles) ... */
+
+
+/* Additional Animation */
+@keyframes fadeIn { /* Define the fade-in animation */
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.cta-button {
+    display: block; /* Ensure the button is displayed */
+    visibility: visible; 
+    z-index: 10;  /* Bring the button to the front */
+    opacity: 1; /* Make the button fully opaque */
+    background-color: #007bff;  /* Adjust as needed */
+    color: #fff;  /* Adjust as needed */
+    font-size: 1rem; /* Ensure the button has a visible font size */
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Floating Shape Styles */
+.floating-shape {
+  position: absolute;
+  opacity: 0.6; /* Slightly transparent */
+  border-radius: 50%;
+  padding: 1rem;
+  font-size: 0.8rem; /* Adjust font size as needed */
+  text-align: center;
+  z-index: -1; /* Keep shapes behind other content */
+  animation: float 8s ease-in-out infinite;
+}
+
+/* Different colors and sizes for variety */
+.shape1 {
+  background-color: #9370DB; /* Medium purple */
+  width: 100px;
+  height: 100px;
+  left: 10%;
+  top: 20%;
+}
+
+.shape2 {
+  background-color: #DA70D6; /* Orchid */
+  width: 80px;
+  height: 80px;
+  right: 25%;
+  top: 40%;
+}
+
+.shape3 {
+  background-color: #BA55D3; /* Medium orchid */
+  width: 120px;
+  height: 120px;
+  left: 45%;
+  bottom: 15%;
+}
+
+/* Floating Animation */
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+  100% { transform: translateY(0); }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .floating-shape {
+    font-size: 0.7rem; /* Adjust font size for smaller screens */
+  }
+}
+/* In your style.css file */
+body {
+    /* ... your other styles ... */
+    padding-top: 5rem; /* Adjust the value as needed */
+}
+
+/* Or, if you want to apply it to the container only: */
+.container {
+    /* ... your other styles ... */
+    padding-top: 5rem;
+}
+/* ... your other styles ... */
+
+/* Contact Bar Styles */
+.contact-bar {
+    background-color: #6a0dad; /* Slightly lighter purple */
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+.contact-button { /* Button styles */
+    background-color: #fff;
+    color: #6a0dad;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    margin: 0 0.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.contact-button:hover {
+    background-color: #eee;
+    transform: scale(1.05);
+}
+
+.text-with-image {
+  /* Control the overall container */
+  display: flex; /* or inline-flex for in-line layout */
+  align-items: flex-start; /* or center, baseline, etc. */
+}
+
+.text-with-image img {
+  /* Style the image */
+  width: 100px; /* Adjust size */
+  height: auto;  /* Maintain aspect ratio */
+  margin-right: 10px; /* Add spacing */
+}
+
+
+
